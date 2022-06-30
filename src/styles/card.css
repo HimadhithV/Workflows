@@ -1,0 +1,21 @@
+.site-card-border-less-wrapper {
+    /* position:absolute; */
+    
+    
+    padding: 6px;
+    background: transparent;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width:250px;
+    height: 150px;
+
+     
+  }
+
+.ant-card-body{
+  padding: 1px;
+  height: 130px;
+  border-radius: 20px;
+  font-size: 10px;
+}
