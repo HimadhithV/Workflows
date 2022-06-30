@@ -1,0 +1,31 @@
+/* Rectangle 29 */
+.rectangle{
+position: absolute;
+width: 92px;
+height: 92px;
+left: 0px;
+top: 0px;
+
+background: #2B78D4;
+}
+/* Polygon 1 */
+.polygon{
+position: absolute;
+width: 48px;
+height: 46px;
+left: calc(50% - 48px/2 - 914px);
+top: calc(50% - 46px/2 - 494px);
+
+background: #FFFFFF;
+border-radius: 4px;
+}
+/* Ellipse 31 */
+.dot{
+position: absolute;
+width: 10px;
+height: 10px;
+left: 41px;
+top: 41px;
+
+background: #D4962B;
+}

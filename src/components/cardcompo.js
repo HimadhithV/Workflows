@@ -28,7 +28,7 @@ return(
       <p>{props.content1}</p>
       <Button onClick={handleClick} size="small" style={{borderRadius:"5px"}}>Flip</Button>
       </div>
-      <div className='cardback' onClick={handleClick}>
+      <div className='cardback' onClick={handleClick} style={{border:"red"}}>
       <p><Ellipsis tooltip length={50}>{props.content2}</Ellipsis></p>
       <Button onClick={handleClick} size="small" type="primary" ghost style={{backgroundColor:"rgba(43,120,212,255)",color:"white",borderRadius:"5px"}}>View details</Button></div>
       </ReactCardFlip>
