@@ -1,7 +1,8 @@
 
-import { Layout, Menu,Avatar } from 'antd';
+import { Layout, Menu,Avatar,Space } from 'antd';
 import '../styles/icon.css'
-import {SwapOutlined,AppstoreOutlined,CloudDownloadOutlined,SettingOutlined,QuestionCircleOutlined,NotificationTwoTone,PoweroffOutlined } from '@ant-design/icons';
+import Icon from '@ant-design/icons'
+import {UserOutlined,SwapOutlined,AppstoreOutlined,CloudDownloadOutlined,SettingOutlined,QuestionCircleOutlined,NotificationTwoTone,PoweroffOutlined } from '@ant-design/icons';
 import React from 'react';
 const { Sider } = Layout;
 
@@ -21,7 +22,21 @@ onCollapse={(collapsed, type) => {
   console.log(collapsed, type);
 }}
 >
+<div style={{marginBottom:"180px"}}>
+<Menu
 
+  theme="dark"
+  mode="inline"
+  
+  items={[PoweroffOutlined].map(
+    (icon, index) => ({
+      key: String(index + 1),
+      icon: React.createElement(icon),
+      label: `nav ${index + 1}`,
+    }),
+  )}
+/>
+</div>
 <div className="logo"/>
 <Menu
 
@@ -36,7 +51,7 @@ onCollapse={(collapsed, type) => {
     }),
   )}
 />
-<div className="logo1" style={{marginTop:"100px"}}/>
+<div className="logo1" style={{marginTop:"150px"}}/>
 <Menu
 
   theme="dark"
@@ -50,7 +65,9 @@ onCollapse={(collapsed, type) => {
     }),
   )}
 />
-<Avatar type="default"/>
+
+<Avatar size="small" icon={<UserOutlined />}style={{marginTop:"10px",marginLeft:"10px"}} />
+
 <Menu
 
   theme="dark"

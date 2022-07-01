@@ -10,13 +10,13 @@ import Cont from './content'
 import { DownloadOutlined } from '@ant-design/icons';
 import { Button} from 'antd';
 const { Header, Content, Footer} = Layout;
-const size=300;
+const size=400;
 
 const NavBar = () => (
     
-  <Layout>
+  <Layout >
     <SiderBar/>
-    <Layout>
+    <Layout style={{backgroundColor:"#ecf4ff"}}>
     
       <Space direction='horizontal' size={size}>
       <HeadCompo title="Workflows"/>
